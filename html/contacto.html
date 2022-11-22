@@ -3,3 +3,59 @@
 <!-- p -->
 <!-- Enlaces a index, ingredientes, pasos y contacto -->
 <!-- formulario: nombre, email, seleccionar entre consulta/sugerencia/corrección, comentario, aceptar política de privacidad, enviar-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../estilo_primera_web.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+</head>
+<body>
+    <div class="cabecera">
+        <br><h1>Página de contacto</h1><br>
+         <h2>Aquí podrá ponerse en contacto con nosotros.</h2><br>
+     </div>
+
+     <div class="topnav">
+         <a href="./index.html">Inicio</a>
+         <a href="./contacto.html">Contacto</a>
+         <a href="./ingredientes.html">Ingredientes</a>  
+         <a href="./pasos.html">Pasos</a>
+     </div>
+
+     <div style="background-color: black ; color: white;">
+        <br><br>
+        <form>
+            <label for="fname">Nombre:</label><br>
+            <input type="text" id="fname" name="fname" placeholder="Escribe un nombre"><br><br>
+            
+            <label for="lname">Apellidos:</label><br>
+            <input type="text" id="lname" name="lname" placeholder="Escribe tus apellidos"><br><br>
+            
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" placeholder="email@email.com"><br><br>
+
+            <label for="reservas">Elige una acción:</label><br>
+            <select name="reservas" id="reservas">
+            <option value="consulta">Consulta</option>
+            <option value="sugerencia">Sugerencia</option>
+            <option value="correccion">Corrección</option>
+            </select><br><br>
+
+            <label for="comentario">Comentario</label><br>
+            <textarea name="comentario" id="comentario" cols="30" rows="10" placeholder="Deje un comentario"></textarea><br><br>
+            
+            <label for="privacidad">Aceptar política de privacidad</label> <input type="checkbox" name="privacidad" id="privacidad"><br><br>
+
+            <input type="submit" value="Enviar formulario"><br><br>
+
+
+        </form>
+        
+     </div>
+    
+</body>
+</html>
